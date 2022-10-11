@@ -1,0 +1,597 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+body {
+    background-image: url(/img/background\ pic.png);
+    background-size: 100%;
+}
+
+/* Header */
+.header {
+    background-color: #e5003d;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.logo {
+    height: 80px;
+}
+
+.cart {
+    height: 75px;
+    margin-left: 130px;
+}
+
+/* Navigation menu */
+#myLinks {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+  
+.menulink{
+    text-decoration: none;
+    font-family: 'Faustina', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menulink:hover {
+    text-decoration: underline whitesmoke;
+    font-weight: bold;
+}
+
+.burgermenu {
+    height: 73px;
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.policylink {
+    text-decoration: none;
+    font-family: 'Faustina', serif;
+    color: whitesmoke;
+    line-height: 30px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.policylink:hover {
+    text-decoration: underline whitesmoke;
+    font-weight: bold;
+}
+
+.policylinks {
+    border-top: 2px solid whitesmoke;
+    margin-top: 10px;
+}
+
+/* Welcome */
+.welcome {
+    text-align: center;
+}
+
+.welcomeimg {
+    width: 100%;
+    height: auto;
+    margin-top: 82px;
+    z-index: -1;
+}
+
+.paragraph {
+    font-family: 'Cormorant Garamond', serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+    line-height: 35px;
+    text-shadow: 1px 1px whitesmoke;
+    text-align: center;
+}
+
+/* Content */
+.content {
+    text-align: center;
+}
+
+.header1 {
+    font-family: 'Faustina', serif;
+    font-size: 4rem;
+    color: #009fe3;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.header2 {
+    font-family: 'Faustina', serif;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px whitesmoke;
+    padding-top: 45px;
+    text-align: center;
+}
+
+.updateimg {
+    height: 200px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.733);
+}
+
+.hasbroimg2 {
+    height: 185px;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+}
+
+.hasbroimg1 {
+    display:none;
+}
+
+/* Footer */
+footer {
+    background-color: #e5003d;
+    width: 100%;
+}
+
+.footerlogo {
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.footerlinks {
+    border-bottom: 2px solid whitesmoke;
+}
+
+.footerlink {
+    text-decoration: none;
+    font-family: 'Faustina', serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: whitesmoke;
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+.footerlink:hover {
+    text-decoration: underline whitesmoke;
+    font-weight: bold;
+}
+
+.copyright {
+    color: whitesmoke;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.footerimgs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.footerimg {
+    height: 65px;
+}
+
+/* Media queries */
+@media only screen and (min-width:576px) {
+    /* Header */
+    .logo {
+        height: 120px;
+    }
+        
+    .cart {
+        height: 115px;
+        margin-left: 200px;
+    }
+
+    .burgermenu {
+        height: 115px;
+        right: 5px;
+        top: 5px;
+    }
+
+    .policylink {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    /* Content */
+    .paragraph {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 25px;
+        font-size: 2.5rem;
+        line-height: 40px;
+        text-shadow: 1px 1px whitesmoke;
+    }
+
+    .header1 {
+        font-size: 5rem;
+        text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+        padding-top: 60px;
+    }
+    
+    .header2 {
+        font-size: 3rem;
+        padding-top: 50px;
+    }
+    
+    .updateimg {
+        height: 230px;
+        margin-top: 40px;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.733);
+    }
+    
+    .hasbroimg2 {
+        height: 215px;
+        margin-top: 30px;
+        margin-left: 35%;
+    }
+    
+    /* Footer */
+    .footerlogo {
+        height: 70px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    
+    .footerlinks {
+        border-bottom: 3px solid whitesmoke;
+        padding-bottom: 7px;
+    }
+    
+    .footerlink {
+        font-size: 1.5rem;
+        line-height: 40px;
+        margin-left: 20px;
+    }
+    
+    .footerlink:hover {
+        text-decoration: underline whitesmoke;
+        font-weight: bold;
+    }
+    
+    .copyright {
+        margin-left: 20px;
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+
+    .footerimgs {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 20px;
+    }
+
+    .footerimg {
+        height: 85px;
+    }
+}
+@media only screen and (min-width:768px) {
+    /* Header */
+    .logo {
+        height: 100px;
+    }
+    
+    .cart {
+        height: 85px;
+        margin-left: 465px;
+    }
+    
+    .burgermenu {
+        height: 82px;
+        right: 13px;
+        top: 13px;
+    }
+
+    .menulink{
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    .policylink {
+        line-height: 40px;
+        font-size: 1.5rem;
+    }
+
+    /* Content */
+    .paragraph {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 30px;
+        font-size: 2rem;
+        line-height: 40px;
+        text-shadow: 1px 1px whitesmoke;
+    }
+
+    .header1 {
+        font-size: 5rem;
+        text-shadow: -3.5px 0 black, 0 3.5px black, 3.5px 0 black, 0 -3.5px black;
+        padding-top: 70px;
+    }
+
+    .header2 {
+        font-size: 3rem;
+        text-shadow: 2px 2px whitesmoke;
+        padding-top: 60px;
+    }
+
+    .updateimg {
+        height: 350px;
+        margin-top: 50px;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.733);
+    }
+
+    .hasbroimg2 {
+        height: 255px;
+        margin-top: 40px;
+    }
+    
+    /* Footer*/
+    .footerlogo {
+        height: 65px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    .footerlinks {
+        border-bottom: 3px solid whitesmoke;
+        padding-bottom: 10px;
+    }
+    
+    .footerlink {
+        font-size: 1.5rem;
+        color: whitesmoke;
+        line-height: 35px;
+        margin-left: 25px;
+    }
+    
+    .copyright {
+        margin-left: 25px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+    
+    .footerimgs {
+        margin-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 20px;
+    }
+    
+    .footerimg {
+        height: 85px;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .cart {
+        margin-left: 685px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    /* Header */
+    .logo {
+        height: 90px;
+    }
+
+    .cart {
+        height: 75px;
+    }
+
+    .burgermenu {
+        display: none;
+    }
+
+    .cart {
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    #myLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menulink {
+        font-size: 1.9rem;
+    }
+
+    .policylinks {
+        display: none;
+    }
+
+    /* Content */
+    .content {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    #updates {
+        margin-left: 70px;
+        text-align: left;
+    }
+
+    #pastelmatt {
+        margin-left: 70px;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    #pmparagraph {
+        margin-top: 45px;
+        margin-left: 25px;
+        text-align: left;
+        padding-right: 180px;
+    }
+
+    #pmimg {
+        transform: rotate(90deg);
+        margin-top: 30px;
+        height: 280px;
+    }
+
+    #siliconecircles {
+        margin-top: 50px;
+        margin-left: 70px;
+        text-align: left;
+    }
+
+    #scparagraph {
+        text-align: left;
+        margin-left: 25px;
+        padding-right: 180px;
+    }
+
+    #scimg {
+        height: 280px;
+        margin-top: 5px;
+    }
+    .hasbrogrid{
+        display: grid;
+        grid-template-columns: 25% 75%; 
+    }
+    
+    .hasbroimg1 {
+        display: block;
+        height: 255px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    
+    .hasbroimg2 {
+        display: none;
+    }
+
+    #hasbro {
+        text-align: left;
+    }
+
+    #hasbroparagraph{
+        text-align: left;
+        margin-bottom: 100px;
+        margin-right: 160px;
+    } 
+
+    /* Footer */
+    .footerlogo {
+        margin-left: 40%;
+    }
+    
+    .footerlink {
+        font-size: 1.8rem;
+    }
+
+    .footerlinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footerimgs {
+        display: flex;
+        justify-content: end;
+        margin-top: 30px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .footerimg {
+        margin-right: 15px;
+        height: 90px;
+    }
+}
+
+@media only screen and (min-width:1570px) {
+    .content {
+        grid-template-columns: 65% 35%;
+    }
+
+    .paragraph {
+        font-size: 2.5rem;
+        line-height: 50px;
+        padding-right: 180px;
+    }
+
+    #pmimg {
+        margin-top: 40px;
+        height: 380px;
+    }
+
+    #siliconecircles {
+        margin-top: 40px;
+    }
+
+    #scimg {
+        height: 380px;
+        margin-top: 3px;
+    }
+
+    .hasbrocontent {
+        margin-top: 50px;
+    }
+
+    .footerlogo {
+        margin-left: 45%;
+    }
+
+}
+
+@media only screen and (min-width:1800px) {
+    .paragraph {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .header1 {
+        padding-left: 250px;
+    }
+
+    .header2 {
+        padding-left: 250px;
+    }
+
+    #updates {
+        margin-top: 50px;
+    }
+
+    #hasbro {
+        padding-left: 1px;
+    }
+
+    .hasbroimg1 {
+        margin-left: 250px;
+    }
+}
